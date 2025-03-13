@@ -412,22 +412,6 @@ a.nav-link {
     padding: 0; /* Controlla il padding per il container */
 }
 
-#iMieiLavori .col-md-5 {
-   padding-left: 0 !important;
-   padding-right: 0 !important;
-}
-
-.container {
-   padding-left: 0;
-   padding-right: 0;
-}
-
-* {
-   box-sizing: border-box;
-}
-
-
-
 /* Footer */
   
 .bg-footer {
