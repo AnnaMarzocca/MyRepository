@@ -509,10 +509,6 @@ a.nav-link {
       padding: 0 5px; 
   }
 
-  .col-divider {
-      margin-left: -10px; 
-  }
-
 @media (max-width: 768px) {
   .card-img-top {
       height: auto; /* Imposta l'altezza automatica */
