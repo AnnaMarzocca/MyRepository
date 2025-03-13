@@ -514,73 +514,76 @@ a.nav-link {
   padding: 0 10px;
 }
 
-@media (max-width: 768px) {
-    .card-img-top {
-        height: auto; /* Imposta un'altezza dinamica */
-        max-height: 250px; /* Imposta un limite per evitare immagini troppo grandi */
-        object-fit: contain; /* Assicura che l'immagine sia completamente visibile */
-    }
-}
+/* Modifiche per la versione mobile */
+@media (max-width: 768px) { 
+  /* I miei lavori */
 
-@media (max-width: 768px) {
-    .custom-card {
-        min-height: auto; /* Permette alla card di adattarsi al contenuto */
-        height: auto !important; /* Evita limiti di altezza fissi */
-    }
+  .custom-card {
+    height: 480px; 
+    width: 100%; 
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 auto; /* Assicura che la card sia centrata */
+    max-width: 100%; /* Larghezza massima per dispositivi mobili */
+  }
 
-    .card-body {
-        height: auto; /* Evita che il contenuto venga tagliato */
-        overflow: visible; /* Mostra tutto il testo senza nasconderlo */
-    }
-}
+  .card-img-top {
+    height: 60%; 
+    object-fit: cover; 
+    width: 100%;
+  }
 
-@media (max-width: 768px) {
-    #iMieiLavori .row {
-        justify-content: center !important; /* Centra tutte le card */
-    }
+  .card-body {
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
 
-    #iMieiLavori .col-md-5 {
-        width: 100% !important; /* Fa sì che ogni card occupi tutta la larghezza su mobile */
-        text-align: center; /* Evita spostamenti laterali */
-    }
+  .cta-card {
+    display: inline-block;
+    padding: 13px 20px; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 28px;
+    border: 1px solid transparent;
+    background: linear-gradient(150.03deg, #BC6AD7 0%, #E36C96 25.69%, #F36C7A 38.62%, #FF7D5B 52.71%, #FF8F55 64.99%, #FF9951 75.59%);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
 
-    .custom-card {
-        margin-left: auto;
-        margin-right: auto; /* Forza il centramento */
-    }
+  /* Correzione per la visualizzazione del terzo progetto */
+  #iMieiLavori .row:last-child {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permette ai progetti di avvolgersi su dispositivi mobili */
+    width: 100%;
+    margin: 0 auto; /* Assicura la centratura */
+    padding: 0; /* Riduce il padding per evitare spazi vuoti */
+  }
 
-	#iMieiLavori .custom-card {
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: space-between;
-	    height: 100% !important; /* Evita che una card sia più corta delle altre */
-	}
-	
-	#iMieiLavori .custom-card .card-body {
-	    flex-grow: 1; /* Fa sì che il contenuto si espanda uniformemente */
-	}
-	
-	#iMieiLavori .row {
-	    display: flex;
-	    justify-content: center !important; /* Assicura che tutte le card siano centrate */
-	    flex-wrap: wrap; /* Fa sì che su mobile vadano in colonna */
-	}
-	
-	#iMieiLavori .col-md-5 {
-	    display: flex;
-	    justify-content: center;
-	}
-	
-	.custom-card {
-	    margin-left: auto !important;
-	    margin-right: auto !important; /* Elimina lo spostamento a sinistra */
-	}
-	
-	.miei-lavori .progetto {
-	    padding: 10px;
-	    margin: 0 auto;
-	}
+  #iMieiLavori .col-md-5 {
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Rimuovi eventuali padding extra */
+  }
 
+  #iMieiLavori .custom-card.text-center {
+    max-width: 100%; /* Larghezza al 100% per dispositivi mobili */
+    margin: 0 auto;
+  }
+
+  .miei-lavori {
+    display: flex;
+    justify-content: center; /* Assicura che tutto sia centrato */
+    flex-wrap: wrap; /* Necessario per fare il wrap dei progetti */
+    margin: 0 auto; /* Rende sicuro il centraggio */
+    padding: 0; /* Rimuove padding non necessari */
+  }
 }
 
 
