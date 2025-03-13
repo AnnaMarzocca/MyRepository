@@ -526,8 +526,10 @@ a.nav-link {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 10px auto; /* Assicura che la card sia centrata */
+    margin-left: 20px; /* Aggiungi margine a sinistra */
+    margin-right: 20px; /* Aggiungi margine a destra */
     max-width: 100%; /* Larghezza massima per dispositivi mobili */
+    
   }
 
   .card-img-top {
