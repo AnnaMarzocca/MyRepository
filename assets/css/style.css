@@ -548,38 +548,39 @@ a.nav-link {
         margin-left: auto;
         margin-right: auto; /* Forza il centramento */
     }
-}
 
-#iMieiLavori .custom-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100% !important; /* Evita che una card sia più corta delle altre */
-}
+	#iMieiLavori .custom-card {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    height: 100% !important; /* Evita che una card sia più corta delle altre */
+	}
+	
+	#iMieiLavori .custom-card .card-body {
+	    flex-grow: 1; /* Fa sì che il contenuto si espanda uniformemente */
+	}
+	
+	#iMieiLavori .row {
+	    display: flex;
+	    justify-content: center !important; /* Assicura che tutte le card siano centrate */
+	    flex-wrap: wrap; /* Fa sì che su mobile vadano in colonna */
+	}
+	
+	#iMieiLavori .col-md-5 {
+	    display: flex;
+	    justify-content: center;
+	}
+	
+	.custom-card {
+	    margin-left: auto !important;
+	    margin-right: auto !important; /* Elimina lo spostamento a sinistra */
+	}
+	
+	.miei-lavori .progetto {
+	    padding: 10px;
+	    margin: 0 auto;
+	}
 
-#iMieiLavori .custom-card .card-body {
-    flex-grow: 1; /* Fa sì che il contenuto si espanda uniformemente */
-}
-
-#iMieiLavori .row {
-    display: flex;
-    justify-content: center !important; /* Assicura che tutte le card siano centrate */
-    flex-wrap: wrap; /* Fa sì che su mobile vadano in colonna */
-}
-
-#iMieiLavori .col-md-5 {
-    display: flex;
-    justify-content: center;
-}
-
-.custom-card {
-    margin-left: auto !important;
-    margin-right: auto !important; /* Elimina lo spostamento a sinistra */
-}
-
-.miei-lavori .progetto {
-    padding: 10px;
-    margin: 0 auto;
 }
 
 
