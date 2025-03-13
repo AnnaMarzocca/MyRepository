@@ -400,6 +400,18 @@ a.nav-link {
   margin: 0 auto;
 }
 
+.miei-lavori {
+    display: flex;
+    justify-content: center; /* Assicurati che sia centrato */
+    flex-wrap: wrap; /* Necessario per fare il wrap dei progetti */
+}
+
+.miei-lavori {
+    margin-left: auto; /* Imposta margine automatico per il centraggio */
+    margin-right: auto;
+    padding: 0; /* Controlla il padding per il container */
+}
+
 
 
 /* Footer */
