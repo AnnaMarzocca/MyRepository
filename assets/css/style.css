@@ -533,3 +533,34 @@ a.nav-link {
       overflow: visible; /* Assicura che il contenuto non venga nascosto */
   }
 }
+
+@media (max-width: 768px) {
+    #iMieiLavori .row {
+        justify-content: center !important; /* Centra tutti gli elementi */
+    }
+
+    #iMieiLavori .col-md-5, 
+    #iMieiLavori .col-md-10 {
+        max-width: 100% !important; /* Evita problemi di larghezza */
+        text-align: center; /* Assicura il corretto allineamento */
+    }
+
+    #iMieiLavori .custom-card {
+        margin-left: auto;
+        margin-right: auto; /* Forza il centramento */
+    }
+}
+
+@media (min-width: 768px) {
+    #iMieiLavori .custom-card {
+        min-height: 500px; /* Imposta un'altezza minima per uniformare le card */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribuisce gli elementi in modo equo */
+    }
+
+    #iMieiLavori .custom-card .card-body {
+        flex-grow: 1; /* Fa sì che tutte le card abbiano lo stesso spazio interno */
+    }
+}
+
