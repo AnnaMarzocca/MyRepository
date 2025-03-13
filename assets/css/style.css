@@ -504,3 +504,40 @@ a.nav-link {
   padding: 0 10px;
 }
 
+@media (max-width: 768px) {
+    .card-img-top {
+        height: auto; /* Imposta un'altezza dinamica */
+        max-height: 250px; /* Imposta un limite per evitare immagini troppo grandi */
+        object-fit: contain; /* Assicura che l'immagine sia completamente visibile */
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        min-height: auto; /* Permette alla card di adattarsi al contenuto */
+        height: auto !important; /* Evita limiti di altezza fissi */
+    }
+
+    .card-body {
+        height: auto; /* Evita che il contenuto venga tagliato */
+        overflow: visible; /* Mostra tutto il testo senza nasconderlo */
+    }
+}
+
+@media (max-width: 768px) {
+    #iMieiLavori .row {
+        justify-content: center !important; /* Centra tutte le card */
+    }
+
+    #iMieiLavori .col-md-5 {
+        width: 100% !important; /* Fa sì che ogni card occupi tutta la larghezza su mobile */
+        text-align: center; /* Evita spostamenti laterali */
+    }
+
+    .custom-card {
+        margin-left: auto;
+        margin-right: auto; /* Forza il centramento */
+    }
+}
+
+
