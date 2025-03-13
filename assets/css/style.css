@@ -508,6 +508,7 @@ a.nav-link {
   .col-content {
       padding: 0 5px; 
   }
+}
 
 @media (max-width: 768px) {
   .card-img-top {
