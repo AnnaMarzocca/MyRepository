@@ -567,4 +567,10 @@ a.nav-link {
     margin-right: auto !important; /* Elimina lo spostamento a sinistra */
 }
 
+/* Esempio di padding/margini inconsistente per una singola card */
+.miei-lavori .progetto:nth-child(3) {
+    padding-left: 5px; /* controllare questi valori */
+    padding-right: 5px;
+}
+
 
