@@ -564,3 +564,26 @@ a.nav-link {
     }
 }
 
+@media (max-width: 768px) {
+    #iMieiLavori .row {
+        justify-content: center !important; 
+    }
+
+    #iMieiLavori .col-md-5 {
+        width: 100%; /* Fa sì che ogni card occupi tutta la larghezza su mobile */
+        text-align: center;
+    }
+
+    .card-img-top {
+        height: auto;
+        max-height: 250px; /* Limita l'altezza per evitare tagli */
+        object-fit: contain; /* Mostra l'immagine intera senza ritagliarla */
+    }
+
+    .custom-card {
+        min-height: auto; 
+        height: auto !important;
+    }
+}
+
+
