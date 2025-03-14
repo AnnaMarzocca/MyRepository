@@ -534,7 +534,7 @@ a.nav-link {
 
   .card-img-top {
     height: 60%; 
-    object-fit: contain; 
+    object-fit: cover; 
     width: 100%;
   }
 
